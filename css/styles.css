@@ -1,11 +1,11 @@
 /* Phone and narrow viewport first */
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 main {
-  width: 100%;
-  padding: 1rem;
+    width: 100%;
+    padding: 1rem;
 }
 
 body {
@@ -13,37 +13,39 @@ body {
 }
 
 .container {
-  width: 100%;
+    width: 100%;
 }
 
 img {
-  max-width: 100%;
-  height: auto;
+    max-width: 100%;
+    height: auto;
 }
 
 .cards {
-  display: flex;
-  flex-direction: column;
+    gap: 1.5rem;  
+    margin: 1.5rem 0;
+    display: flex;
+    flex-direction: column;
 }
 
 /* Tablet-sized space becomes available */
 
 @media (min-width: 768px) {
-  .cards {
-    flex-direction: row;
-  }
+    .cards {
+        flex-direction: row;
+    }
 
-  main {
-    width: 85%;
-    margin: 0 auto;
-  }
+    main {
+        width: 85%;
+        margin: 0 auto;
+    }
 }
 
 /* Laptop-sized space becomes available */
 
 @media (min-width: 1024px) {
-  .container {
-    max-width: 1000px;
-    margin: 0 auto;
-  }
+    .container {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
 }
